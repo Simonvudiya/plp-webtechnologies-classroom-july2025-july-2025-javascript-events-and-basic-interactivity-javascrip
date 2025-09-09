@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment Submission Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Light/Dark Mode Toggle -->
+  <header>
+    <h1>📘 Class Assignment Submission</h1>
+    <button id="modeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <!-- Interactive Counter -->
+  <section class="counter-section">
+    <h2>🎮 Fun Break: Click Counter</h2>
+    <p>Button Clicks: <span id="clickCount">0</span></p>
+    <button id="countBtn">Click Me!</button>
+  </section>
+
+  <!-- Collapsible FAQ -->
+  <section class="faq">
+    <h2>❓ Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is the deadline? ⏰</button>
+      <p class="faq-answer">All assignments must be submitted before midnight.</p>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Can I edit my submission? ✏️</button>
+      <p class="faq-answer">Yes, you can update until the deadline.</p>
+    </div>
+  </section>
+
+  <!-- Assignment Form -->
+  <section class="form-section">
+    <h2>📝 Submit Your Assignment</h2>
+    <form id="assignmentForm">
+      <label>Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your name"><br>
+
+      <label>Email:</label>
+      <input type="text" id="email" placeholder="Enter your email"><br>
+
+      <label>Assignment Title:</label>
+      <input type="text" id="title" placeholder="Enter assignment title"><br>
+
+      <label>Password:</label>
+      <input type="password" id="password" placeholder="Enter a secure password"><br>
+
+      <button type="submit">Submit Assignment</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
